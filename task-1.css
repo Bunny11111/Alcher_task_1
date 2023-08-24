@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(240, 240, 136);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+header{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+}
+
+input {
+    margin: 20px;
+    color: #fff;
+   background-color: #333;
+    text-align: center;
+    padding: 5px;
+  }
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+}
+  .content {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 250px;
+    padding: 40px;
+  }
+  
+  .left-image {
+    width: 40%;
+    left:20px ;
+    height: auto;
+    border:5px solid #333;
+    border-radius: 10px;
+  }
+  
+  .right-image {
+    width: 40%;
+    height: auto;
+    transform: scaleX(-1);
+    background-image: url(https://sportsforwinter.com/images/blog/thumbnails/202304/img_05041214380.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border:5px solid #333;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .right-image:hover {
+    transform: scale(2);
+  }
+  .embedded-site {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .embedded-site iframe {
+    width: 100%;
+    height: 100%;
+    border: 5px solid gray;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .left-image,
+    .right-image {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
